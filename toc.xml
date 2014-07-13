@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Addon Author="Nevir" APIVersion="8" Name="Lootability" Description="">
+  <Form Name="forms/configuration.xml"/>
+
+  <Script Name="src/lootability.lua"/>
+  <Script Name="src/lootability/util.lua"/>
+
+  <!-- Entry Point -->
+  <Script Name="src/main.lua"/>
+</Addon>
