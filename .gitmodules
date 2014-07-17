@@ -1,0 +1,3 @@
+[submodule "vendor/GeminiLocale"]
+	path = vendor/GeminiLocale
+	url = https://github.com/wildstarnasa/GeminiLocale
