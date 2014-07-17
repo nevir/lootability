@@ -9,6 +9,10 @@
   <Script Name="locale/enUS.lua"/>
 
   <Script Name="src/lootability/util.lua"/>
+  <Script Name="src/lootability/event.lua"/>
+  <Script Name="src/lootability/player.lua"/>
+  <Script Name="src/lootability/roster.lua"/>
+  <Script Name="src/lootability/timeline.lua"/>
 
   <!-- Entry Point -->
   <Script Name="src/main.lua"/>

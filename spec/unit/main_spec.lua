@@ -1,8 +1,8 @@
 describe('Main entry point', function()
-  local addon_scope = Lootability
+  local addon = Lootability
 
-  before_each(function()
-    _G.Lootability = addon_scope
+  after_each(function()
+    _G.Lootability = addon
   end)
 
   it('should not pollute the global namespace', function()
@@ -17,7 +17,7 @@ describe('Main entry point', function()
 
     assert.equals(#Apollo.RegisterAddon.calls, 1)
     args = Apollo.RegisterAddon.calls[1]
-    assert.equals(args[1], addon_scope)   -- tAddonTable
+    assert.equals(args[1], addon)   -- tAddonTable
     assert.equals(args[2], true)          -- bHasConfig
     assert.equals(args[3], 'Lootability') -- strConfigName
     assert.is.table(args[4])              -- tDependencies

@@ -1,6 +1,7 @@
 xml = require 'xml'
 
 dofile('spec/mockstar/apollo.lua')
+dofile('spec/mockstar/gamelib.lua')
 
 toc_file = io.open('toc.xml', 'r')
 toc = xml.load(toc_file:read('*a'))
