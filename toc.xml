@@ -2,7 +2,12 @@
 <Addon Author="Nevir" APIVersion="8" Name="Lootability" Description="">
   <Form Name="forms/configuration.xml"/>
 
+  <Script Name="vendor/GeminiLocale/GeminiLocale.lua"/>
+
   <Script Name="src/lootability.lua"/>
+
+  <Script Name="locale/enUS.lua"/>
+
   <Script Name="src/lootability/util.lua"/>
 
   <!-- Entry Point -->

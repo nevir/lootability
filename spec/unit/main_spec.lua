@@ -17,9 +17,9 @@ describe('Main entry point', function()
 
     assert.equals(#Apollo.RegisterAddon.calls, 1)
     args = Apollo.RegisterAddon.calls[1]
-    assert.equals(args[1], addon_scope) -- tAddonTable
-    assert.equals(args[2], true)        -- bHasConfig
-    assert.is.string(args[3])           -- strConfigName
-    assert.is.table(args[4])            -- tDependencies
+    assert.equals(args[1], addon_scope)   -- tAddonTable
+    assert.equals(args[2], true)          -- bHasConfig
+    assert.equals(args[3], 'Lootability') -- strConfigName
+    assert.is.table(args[4])              -- tDependencies
   end)
 end)

@@ -4,5 +4,8 @@
 --
 -- Instead of referencing this global scope directly, create a local reference
 -- to it within each file.
-Lootability = {_previousScope = Lootability}
+Lootability = {
+  _previousScope = Lootability,
+  Major          = 'Lootability-1.0',
+}
 local scope = Lootability

@@ -1,5 +1,7 @@
 xml = require 'xml'
 
+dofile('spec/mockstar/apollo.lua')
+
 toc_file = io.open('toc.xml', 'r')
 toc = xml.load(toc_file:read('*a'))
 toc_file:close()
@@ -9,8 +11,6 @@ for _, directive in ipairs(toc) do
     dofile(directive.Name)
   end
 end
-
-dofile('spec/mockstar/apollo.lua')
 
 -- Helpers
 
