@@ -8,7 +8,7 @@ echo 'rocks_servers = {
 }' >> ~/config.lua
 
 
-if [ "$LUA" == "Lua 5.1" ]; then
+if [ "$LUA_VERSION" == "Lua 5.1" ]; then
   curl http://www.lua.org/ftp/lua-5.1.5.tar.gz | tar xz
   cd lua-5.1.5;
   sudo make linux install;
