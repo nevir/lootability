@@ -1,0 +1,18 @@
+language: c
+
+env:
+  - LUA_VERSION='Lua 5.1'
+
+before_install:
+  - bash .travis_setup.sh
+  - sudo apt-get update -qq
+
+install:
+  - sudo luarocks install luasec
+  #- sudo luarocks install busted
+  - cd busted/
+  - sudo luarocks make
+  - cd ../
+  - sudo luarocks install xml
+
+script: busted
