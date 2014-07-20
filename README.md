@@ -1,6 +1,6 @@
 # Lootability
 
-![Travis](https://travis-ci.org/nevir/lootability.svg?branch=master)
+[![Build Status](https://travis-ci.org/nevir/lootability.svg?branch=master)](https://travis-ci.org/nevir/lootability)
 
 It does things. And stuff.
 
