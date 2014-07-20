@@ -4,12 +4,11 @@ Lootability.Timeline = Lootability.Util.NewClass()
 local addon = Lootability
 local scope = Lootability.Timeline
 
--- Kicks off a new event
-function scope:StartEvent(type)
-  local newEvent = addon.Event:New({
-    type  = type,
-    start = GameLib.GetGameTime(),
-  })
+-- The top level event that is currently being focused on by the user. This
+-- should be used for anything that implicitly adds new event spans.
+scope.current = nil
 
-  return newEvent
+-- Starts tracking an event in the timeline
+function scope:AddEvent(event, parent)
+
 end

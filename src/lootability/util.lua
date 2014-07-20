@@ -3,11 +3,13 @@ local scope = Lootability.Util
 
 -- Object Orientation --
 
--- Builds a new prototype that inherits from Lootability.Util.Class.
-function scope.NewClass()
-  class = {}
+-- Builds a new prototype that inherits from a specific superclass, or
+-- Lootability.Util.Class if none is given.
+function scope.NewClass(super)
+  local class = {}
+  local super = super or scope.Class
   class.__index = class
-  setmetatable(class, {__index = scope.Class})
+  setmetatable(class, {__index = super, super = super})
   return class
 end
 
@@ -19,7 +21,7 @@ scope.Class = {}
 --
 -- Calls Init() on the newly created instance.
 function scope.Class:New(...)
-  instance = {}
+  local instance = {}
   setmetatable(instance, self)
   instance:Init(unpack(arg))
   return instance

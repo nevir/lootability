@@ -1,9 +1,6 @@
 # Lootability
 
-
-##
-
-
+It does things. And stuff.
 
 
 ## Development
@@ -22,6 +19,6 @@ luarocks install xml
 
 ### Running Tests
 
-```
+```sh
 busted
 ```
