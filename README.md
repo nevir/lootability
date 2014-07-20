@@ -1,5 +1,7 @@
 # Lootability
 
+![Travis](https://travis-ci.org/nevir/lootability.svg?branch=master)
+
 It does things. And stuff.
 
 
