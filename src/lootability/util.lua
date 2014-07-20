@@ -7,9 +7,9 @@ local scope = Lootability.Util
 -- Lootability.Util.Class if none is given.
 function scope.NewClass(super)
   local class = {}
-  local super = super or scope.Class
+  class.super = super or scope.Class
   class.__index = class
-  setmetatable(class, {__index = super, super = super})
+  setmetatable(class, {__index = class.super})
   return class
 end
 
