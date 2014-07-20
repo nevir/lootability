@@ -23,3 +23,6 @@ make && sudo make install
 cd ..
 
 git clone https://github.com/Olivine-Labs/busted.git --quiet
+cd busted
+git reset --hard 1ba552c92e431aac5cb4de329ab9bccc170469f6
+cd ..
