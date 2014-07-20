@@ -38,9 +38,9 @@ player attendance, etc).
 do not assume that the span was completed at the current game time.
 
 
-## Scores
+## Points
 
-Various models within lootability have scores associated with them: players,
+Various models within lootability have points associated with them: players,
 items, spans, etc. Scores are inherently a generic concept: a type, and a
 numeric value - EP/GP/DKP/etc.
 
@@ -48,13 +48,13 @@ numeric value - EP/GP/DKP/etc.
 ## Plugins
 
 Lootability allows for players to run and configure various plugins that modify
-or annotate scores for spans/players/items/etc. Some expample plugins:
+or annotate points for spans/players/items/etc. Some expample plugins:
 
 **Item GP:** Each time a loot span begins, this plugin annotates the span with
 the item's calculated GP value.
 
 **Attendance:** Each time an attendance span begins, this span registers for
-tick signals. Each tick, it increments one or more configured scores for the
+tick signals. Each tick, it increments one or more configured points for the
 player.
 
 etc.
@@ -63,5 +63,5 @@ etc.
 ## Unknown
 
 One thing that isn't clear is how to deal with loot rankings, randoms, etc.
-The GUI probably needs *another* plugin system for displaying derived scores,
-and ranking players based on them.
+The GUI probably needs *another* plugin system for displaying scores derived
+from points, and ranking players based on them.
