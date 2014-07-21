@@ -1,4 +1,4 @@
-describe('A complete raid', function()
+pending('A complete raid', function()
   local addon = Lootability
 
   -- TODO(nevir): Set up event tracking/shims.
