@@ -1,7 +1,7 @@
 **Event:** An event is a range of time describing something that occurred. It
 may also be a parent to other events. Examples: item drops, player attendance.
 
-**Transaction:** An **immutable** action describing a change to a particular
+**Transaction:** An _immutable_ action describing a change to a particular
 event. Example: event creation, player awarded 27 EP.
 
 **Activity:** An activity is an event that logically groups other events for
